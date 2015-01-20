@@ -1,0 +1,266 @@
+	<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>index AdMantic</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/dropkick.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите Ваш браузер</a> для комфортного просмотра интренет сайтов.</p>
+		<![endif]-->
+
+		<div class="wrap">
+
+			<!-- Header begin -->
+			<header class="main_head">
+				<div class="container">
+					<div class="logo"><a href="index.html"><img src="img/logo1.png" alt="AdMantic logo"></a></div>
+					<nav class="admin_nav">
+						<ul>
+							<li class="active"><a href="#">Рекламодатель</a></li>
+							<li><a href="#">Вебмастер</a></li>
+						</ul>
+					</nav>
+					<div class="profile">
+						<div class="username"><span class="bordered">username@gmail.com</span></div>
+						<ul class="profile_items">
+							<li><a href="#">Настройки профиля</a></li>
+							<li class="grey"><a href="#">Уведомления (5)</a></li>
+							<li><a href="#">Реферальная программа</a></li>
+							<li><a href="#">Выплаты</a></li>
+							<li><a href="#">Пополнение баланса</a></li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+					</div>
+					<div class="messages">
+						<a href="#" class="bubble"></a>
+						<div class="msg_count">5</div>
+					</div>
+					<div class="balance">Баланс: <span>150 руб.</span></div>
+					<div class="support"><a href="#">Поддержка</a><div class="sup_count">5</div></div>
+				</div>
+			</header>
+			<!-- Header end -->
+
+
+			<!-- Content begin -->
+			<main id="content">
+				<header class="page_head">
+					<div class="container">
+						<nav class="user_nav">
+							<ul>
+								<li class="active">Кампании</li>
+								<li><a href="#">Статистика</a></li>
+							</ul>
+						</nav>
+						<h1>Добавить кампанию</h1>
+					</div>
+				</header>
+				<div class="main_content">
+					<div class="ttl">Общая информация</div>
+					<table class="form_table"><col class="first_col"><col>
+						<tr>
+							<td>Название кампании</td>
+							<td>
+								<select name="" class="custom_select">
+									<option disabled selected class="hidden-option">Название кампании</option>
+									<option value="">Кампания 1</option>
+									<option value="">Кампания 2</option>
+									<option value="">Кампания 3</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Выберите категорию...</td>
+							<td>
+								<select name="" class="custom_select">
+									<option disabled selected class="hidden-option">Выберите категорию...</option>
+									<option value="">Категория 1</option>
+									<option value="">Категория 2</option>
+									<option value="">Категория 3</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Цена клика, руб.</td>
+							<td><input type="text" class="inpt"></td>
+						</tr>
+					</table>
+
+					<div class="ttl">Таргетинг</div>
+					<table class="form_table"><col class="first_col"><col>
+						<tr>
+							<td>Категории</td>
+							<td>
+								<ul class="cat_list">
+									<li>Женщины</li>
+									<li>Дети</li>
+									<li>Кино</li>
+								</ul>
+								<span class="trigger" id="edit_cat">Настроить</span>
+							</td>
+						</tr>
+						<tr>
+							<td>География</td>
+							<td>
+								<ul class="cat_list">
+									<li>Россия</li>
+									<li>Украина</li>
+									<li>Беларусь</li>
+									<li>Казахстан</li>
+								</ul>
+								<span class="trigger" id="edit_geo">Настроить</span>
+							</td>
+						</tr>
+						<tr>
+							<td>Время показа рекламы</td>
+							<td>
+								<ul class="cat_list">
+									<li>Пн: <span class="show_time">9:00 — 20:00</span> </li>
+									<li>Вт: <span class="show_time">9:00 — 20:00</span> </li>
+									<li>Ср: <span class="show_time">9:00 — 20:00</span> </li>
+									<li>Чт: <span class="show_time">9:00 — 20:00</span></li>
+									<li>Пт: <span class="show_time">9:00 — 20:00</span> </li>
+									<li>Сб: <span class="show_time">9:00 — 20:00</span> </li>
+									<li>Вс: <span class="show_time">9:00 — 20:00</span> </li>
+								</ul>
+								<span class="trigger" id="edit_time">Настроить</span>
+							</td>
+						</tr>
+					</table>
+
+					<div class="ttl">Ограничения показа рекламы</div>
+					<table class="form_table"><col class="first_col"><col>
+						<tr>
+							<td>Общий бюджет кампании, руб.</td>
+							<td><input type="text" class="inpt"></td>
+						</tr>
+						<tr>
+							<td>Суточный бюджет кампании, руб.</td>
+							<td><input type="text" class="inpt"></td>
+						</tr>
+						<tr>
+							<td>Максимальное количество кликов в сутки</td>
+							<td><input type="text" class="inpt"></td>
+						</tr>
+					</table>
+
+					<div class="ttl">Ограничения показа рекламы</div>
+					<table class="form_table"><col class="first_col"><col>
+						<tr>
+							<td>Не показывать на сайтах</td>
+							<td>
+								<textarea cols="40" rows="5"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>Показывать только на сайтах</td>
+							<td>
+								<textarea cols="40" rows="5"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>Добавлять автоматически данные для аналитики при создании объйвления в кампании</td>
+							<td><input type="checkbox"></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div class="attention">Внимание! В этом случае к вашей ссылке будет добавляться параметр tid, идентифицирующий источник перехода. Не забудьте проверить корректность работы ссылки tid. Например, http://domen.com/?tid=999778898</div>
+							</td>
+						</tr>
+					</table>
+
+					<button type="submit" class="obutton">Добавить кампанию</button>
+				</div>
+			</main>
+			<!-- Content end -->
+
+		</div>
+
+			
+		<!-- Footer begin -->
+		<footer class="main_footer">
+			<div class="container">
+				<div class="f_right">
+					<div class="phone">Телефон: 8-800-454-34-53</div>
+					E-mail: <a href="mailto:info@admantic.ru">info@admantic.ru</a>
+				</div>
+				<nav class="footer_nav">
+					<ul>
+						<li><a href="we.html">Мы</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="#">Реферальная программа</a></li>
+					</ul>
+				</nav>
+				Copyright &copy;  2014-2015, AdMantic. All right reserved
+			</div>
+		</footer>
+		<!-- Footer end -->
+
+		<div class="popup geo_popup" id="pop2">
+			<span class="trigger right clear_form">Очистить</span>
+			<div class="pop_ttl">Географический таргетинг</div>
+			<div class="scroll_holder">
+				<form action="some.php" class="request">
+					<ul class="geo_list">
+						<li><label for="chb1"><input type="checkbox" id="chb1"><span>СНГ</span></label>
+							<ul>
+								<li><label for="chb2"><input type="checkbox" id="chb2">Азербайджан</label></li>
+								<li><label for="chb3"><input type="checkbox" id="chb3">Армения</label></li>
+								<li><label for="chb4"><input type="checkbox" id="chb4">Беларусь</label></li>
+								<li><label for="chb5"><input type="checkbox" id="chb5">Грузия</label></li>
+								<li><label for="chb6"><input type="checkbox" id="chb6">Таджикистан</label></li>
+								<li><label for="chb7"><input type="checkbox" id="chb7">Туркмения</label></li>
+								<li><label for="chb8"><input type="checkbox" id="chb8">Узбекистан</label></li>
+								<li><label for="chb9"><input type="checkbox" id="chb9">Украина</label>
+									<ul>
+										<li><label for="chb10"><input type="checkbox" id="chb10">Автономная республика Крым</label></li>
+										<li><label for="chb11"><input type="checkbox" id="chb11">Винницкая область</label></li>
+										<li><label for="chb12"><input type="checkbox" id="chb12">Волынская область</label></li>
+										<li><label for="chb13"><input type="checkbox" id="chb13">г. Киев</label></li>
+										<li><label for="chb14"><input type="checkbox" id="chb14">г. Севастополь</label></li>
+										<li><label for="chb15"><input type="checkbox" id="chb15">Днепропетровская область</label></li>
+										<li><label for="chb16"><input type="checkbox" id="chb16">Донецкая область</label></li>
+										<li><label for="chb17"><input type="checkbox" id="chb17">Житомирская область</label></li>
+									</ul>
+								</li>
+								<li><label for="chb18"><input type="checkbox" id="chb18">Азербайджан</label></li>
+								<li><label for="chb19"><input type="checkbox" id="chb19">Армения</label></li>
+								<li><label for="chb20"><input type="checkbox" id="chb20">Беларусь</label></li>
+							</ul>
+						</li>
+						<li><label for="chb21"><input type="checkbox" id="chb21">Европа</label></li>
+						<li><label for="chb22"><input type="checkbox" id="chb22">Америка</label></li>
+					</ul>
+				</form>
+			</div>
+			<button type="submit" class="obutton">Сохранить</button>
+			<button type="reset" class="clear_button">Отмена</button>
+			<div class="close"></div>
+		</div>
+		<div class="overlay"></div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+		<script src="js/vendor/dropkick.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
