@@ -31,7 +31,7 @@ $('.overlay').click(function(){
 });
 /*-- End of Popup --*/
 
-$( document ).tooltip({ //jQueryUI tooltip
+$(".atable").tooltip({ //jQueryUI tooltip
   position: { my: "left bottom-12", at: "right-30 center" }
 });
 
@@ -52,3 +52,5 @@ $('.atable input[type="checkbox"]').bind('change', function () {// Hilight table
     $(this).parents("tr").removeClass('selected_tr');
   }
 });
+
+$( ".datepicker" ).datepicker($.datepicker.regional[ "ru" ]);//jQueryUI Datepicker

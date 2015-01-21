@@ -67,41 +67,44 @@
 								<li><a href="#">Статистика</a></li>
 							</ul>
 						</nav>
-						<h1>Рекламные кампании</h1>
+						<h1>Статистика</h1>
 					</div>
 				</header>
 				<div class="main_content">
-					<div class="st clearfix">
-						<a href="#" class="obutton right">Добавить кампанию</a>
-						<ul class="types">
-							<li class="active">Активные</li>
-							<li><a href="#">Приостановленные</a></li>
-							<li><a href="#">Архивные</a></li>
-						</ul>
+					<div class="filter">
+						<div class="st">
+							<select name="" id="stats" class="custom_select">
+								<option value="">Все кампании</option>
+								<option value="">Кампания 1</option>
+								<option value="">Кампания 2</option>
+								<option value="">Кампания 3</option>
+							</select>
+							<select name="" id="actions" class="custom_select">
+								<option disabled selected class="hidden-option">Действия с выбранными...</option>
+								<option value="">Удалить</option>
+								<option value="">Остановить</option>
+								<option value="">Запустить</option>
+							</select>
+						</div>
+						<div class="st">
+							<div class="date_holder">
+								Дата с:
+								<input type="text" class="datepicker">
+								по:
+								<input type="text" class="datepicker">
+							</div>
+							<ul class="types period">
+								<li class="active">Сегодня</li>
+								<li><a href="#">Вчера</a></li>
+								<li><a href="#">Текущая неделя</a></li>
+								<li><a href="#">Текущий месяц</a></li>
+								<li><a href="#">Последние 30 дней</a></li>
+								<li><a href="#" class="obutton">Показать</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="warning red_warn">
-						<a href="#" class="right">Пополнить счет</a>
-						На вашем балансе недостаточно средств, показ рекламы остановлен.
-					</div>
-					<div class="warning green_warn">
-						<div class="close"></div>
-						На вашем балансе недостаточно средств, показ рекламы остановлен.
-					</div>
-					<div class="warning yellow_warn">
-						<div class="close"></div>
-						На вашем балансе недостаточно средств, показ рекламы остановлен.
-					</div>
-					<div class="warning grey_warn">
-						<div class="close"></div>
-						На вашем балансе недостаточно средств, показ рекламы остановлен.
-					</div>
+					
 					<div class="sel clearfix">
-						<select name="" id="stats" class="custom_select right">
-							<option value="">Статистика за сегодня</option>
-							<option value="">Статистика за вчера</option>
-							<option value="">Статистика за неделю</option>
-							<option value="">Статистика за месяц</option>
-						</select>
 						<select name="" id="actions" class="custom_select">
 							<option disabled selected class="hidden-option">Действия с выбранными...</option>
 							<option value="">Удалить</option>
@@ -110,11 +113,15 @@
 						</select>
 					</div>
 					<table class="atable">
+						<col class="c1">
+						<col class="c2">
+						<col class="c3">
+						<col class="c4">
+						<col class="c5">
+						<col class="c6">
 						<tr>
 							<th><input type="checkbox"></th>
-							<th>№</th>
-							<th>Кампания</th>
-							<th>Состояние</th>
+							<th>Дата</th>
 							<th>Показы</th>
 							<th>Клики</th>
 							<th>CTR</th>
@@ -122,9 +129,7 @@
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>2465889</td>
-							<td><a href="#">Орифлэйм</a></td>
-							<td>Идут показы</td>
+							<td>14.10.2014</td>
 							<td>1000</td>
 							<td>1</td>
 							<td>0,1</td>
@@ -132,36 +137,23 @@
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>2465889</td>
-							<td><a href="#">Орифлэйм</a></td>
-							<td>Идут показы</td>
-							<td>0</td>
+							<td>14.10.2014</td>
+							<td>1000</td>
 							<td>1</td>
 							<td>0,1</td>
 							<td>1,00</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>2465889</td>
-							<td><a href="#">Орифлэйм</a></td>
-							<td><a href="#" class="excl" title="Показы приостановлены по причине отсутствия средств на балансе">Показы приостановлены</a></td>
-							<td>0</td>
+							<td>14.10.2014</td>
+							<td>1000</td>
 							<td>1</td>
 							<td>0,1</td>
 							<td>1,00</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>2465889</td>
-							<td><a href="#">Орифлэйм</a></td>
-							<td><a href="#" class="excl" title="Показы приостановлены по причине отсутствия средств на балансе">Показы приостановлены</a></td>
-							<td>0</td>
-							<td>1</td>
-							<td>0,1</td>
-							<td>1,00</td>
-						</tr>
-						<tr>
-							<td colspan="4" class="total"><b>Итого:</b></td>
+							<td>14.10.2014</td>
 							<td>1000</td>
 							<td>1</td>
 							<td>0,1</td>
@@ -198,7 +190,8 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-
+		<script src="js/vendor/datepicker-ru.js"></script>
+		
 		<script src="js/vendor/dropkick.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
