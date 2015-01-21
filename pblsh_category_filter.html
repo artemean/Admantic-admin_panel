@@ -76,111 +76,79 @@
 							<li><a href="#">Настройки</a></li>
 							<li>Фильтры:
 								<ul>
-									<li class="active"><a href="#">Объявления</a></li>
+									<li><a href="#">Объявления</a></li>
 									<li><a href="#">Цензура</a></li>
-									<li><a href="#">Категории</a></li>
+									<li class="active"><a href="#">Категории</a></li>
 								</ul>
 							</li>
 						</ul>
 					</aside>
 					<section class="admin_section">
-						<h2>Фильтры по объявлениям</h2>
-						<div class="st clearfix">
-							<ul class="types">
-								<li class="active">Активные</li>
-								<li><a href="#">Заблокированные</a></li>
-							</ul>
-						</div>
-						<div class="sel clearfix">
-							<select name="" id="actions" class="custom_select">
-								<option disabled selected class="hidden-option">Действия с выбранными...</option>
-								<option value="">Удалить</option>
-								<option value="">Остановить</option>
-								<option value="">Запустить</option>
-							</select>
-						</div>
+						<h2>Фильтры по категориям</h2>
+						<form action="some.php">
+							<fieldset>
+								<div class="st">
+									<span class="check_all">Разрешить все</span>
+									<span class="uncheck_all">Запретить все</span>
+								</div>
+								<div class="bordered_form clearfix">
+									<div class="w50">
+										<div class="sl">
+											<input type="checkbox" id="ch3">
+											<label for="ch3">What Goes Around Comes Around</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch4">
+											<label for="ch4">A Matter of Time</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch5">
+											<label for="ch5">Stomping GroundsA Matter of Time</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch6">
+											<label for="ch6">Touch Me Hurt Me</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch7">
+											<label for="ch7">Louder Than Words</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch8">
+											<label for="ch8">Brainstorm</label>
+										</div>
+									</div>
 
-						<table class="atable">
-							<tr>
-								<th><input type="checkbox"></th>
-								<th>№</th>
-								<th>Картинка</th>
-								<th>Анонс</th>
-								<th>Категория</th>
-								<th>Состояние</th>
-								<th>Показы</th>
-								<th>Клики</th>
-								<th>CTR</th>
-								<th>Потрачено</th>
-							</tr>
-							<tr>
-								<td><input type="checkbox"></td>
-								<td>2465889</td>
-								<td><a href="#"><img src="img/watch.jpg" alt=""></a></td>
-								<td class="aad_text">
-									<a href="#">Точечное воздействие редко соответствует рыночным</a>
-									<p>Дело в том, что креативная концепция регулярно экономит нишевый проект.</p>
-								</td>
-								<td>Авто</td>
-								<td>Идут показы</td>
-								<td>1000</td>
-								<td>1</td>
-								<td>0,1</td>
-								<td>1,00</td>
-							</tr>
-							<tr>
-								<td><input type="checkbox"></td>
-								<td>2465889</td>
-								<td><a href="#"><img src="img/watch.jpg" alt=""></a></td>
-								<td class="aad_text">
-									<a href="#">Точечное воздействие редко соответствует рыночным</a>
-									<p>Дело в том, что креативная концепция регулярно экономит нишевый проект.</p>
-								</td>
-								<td>Электроника</td>
-								<td>Приостановлена</td>
-								<td>1000</td>
-								<td>1</td>
-								<td>0,1</td>
-								<td>1,00</td>
-							</tr>
-							<tr>
-								<td><input type="checkbox"></td>
-								<td>2465889</td>
-								<td><a href="#"><img src="img/watch.jpg" alt=""></a></td>
-								<td class="aad_text">
-									<a href="#">Точечное воздействие редко соответствует рыночным</a>
-									<p>Дело в том, что креативная концепция регулярно экономит нишевый проект.</p>
-								</td>
-								<td>Электроника</td>
-								<td>Приостановлена</td>
-								<td>1000</td>
-								<td>1</td>
-								<td>0,1</td>
-								<td>1,00</td>
-							</tr>
-							<tr>
-								<td><input type="checkbox"></td>
-								<td>2465889</td>
-								<td><a href="#"><img src="img/watch.jpg" alt=""></a></td>
-								<td class="aad_text">
-									<a href="#">Точечное воздействие редко соответствует рыночным</a>
-									<p>Дело в том, что креативная концепция регулярно экономит нишевый проект.</p>
-								</td>
-								<td>Электроника</td>
-								<td>Приостановлена</td>
-								<td>1000</td>
-								<td>1</td>
-								<td>0,1</td>
-								<td>1,00</td>
-							</tr>
-							<tr>
-								<td colspan="6" class="total"><b>Итого:</b></td>
-								<td>1000</td>
-								<td>1</td>
-								<td>0,4</td>
-								<td>4,00</td>
-							</tr>
-						</table>
+									<div class="w50">
+										<div class="sl">
+											<input type="checkbox" id="ch9">
+											<label for="ch9">What Goes Around Comes Around</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch10">
+											<label for="ch10">A Matter of Time</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch11">
+											<label for="ch11">Stomping GroundsA Matter of Time</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch12">
+											<label for="ch12">Touch Me Hurt Me</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch13">
+											<label for="ch13">Louder Than Words</label>
+										</div>
+										<div class="sl">
+											<input type="checkbox" id="ch14">
+											<label for="ch14">Brainstorm</label>
+										</div>
+									</div>
+								</div>
+								<button class="obutton">Сохранить</button>
+							</fieldset>
+						</form>
 					</section>
 				</div>
 				

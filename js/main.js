@@ -54,3 +54,10 @@ $('.atable input[type="checkbox"]').bind('change', function () {// Hilight table
 });
 
 $( ".datepicker" ).datepicker($.datepicker.regional[ "ru" ]);//jQueryUI Datepicker
+
+$(".check_all").click(function(){//Check all checkboxes in filter form 
+	$('.bordered_form input[type="checkbox"]').prop( "checked", true );
+});
+$(".uncheck_all").click(function(){//Uncheck all checkboxes in filter form 
+	$('.bordered_form input[type="checkbox"]').prop( "checked", false );
+});
