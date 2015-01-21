@@ -182,7 +182,7 @@ h2 + .st {margin-top: -20px;}
 .atable th {text-align: left; color: #838383; font-weight: normal; padding: 5px 20px 25px 10px;}
 .atable td {padding: 15px 20px 15px 10px; border-top: 1px solid #dfe2e4;}
 .atable img {margin: 5px 0;}
-td.tar {padding-right: 50px;}
+.total {padding-right: 50px; text-align: right;}
 .ad_text {font-size: 13px;}
 .ad_text p {margin: 0 0 10px;}
 .selected_tr td {background: #f2f5f7;}
@@ -229,6 +229,19 @@ td.tar {padding-right: 50px;}
 .qm {display: inline-block; width: 21px; height: 21px; background: url(../img/icons/q1.png) 0 0 no-repeat; margin: 0 8px;}
 .qm:hover {background: url(../img/icons/q2.png) 0 0 no-repeat;}
 .char_count {margin: 0 8px; color: #838383;}
+
+.sep {padding: 10px 0;}
+.ref_link {font-size: 16px; border: 2px dashed #7ec127; padding: 10px 14px; display: inline-block; margin-right: 5px;}
+.banners {padding: 15px 0;}
+.banner_holder  {margin-bottom: 32px;}
+.banner_holder img {float: left; margin-right: 20px;}
+.banner_code {border: 1px solid #d4d8da; width: 480px; padding: 6px 10px; float: left; border-radius: 3px;}
+.ref_block {width: 290px; float: right; margin-left: 50px;}
+.all {padding-bottom: 35px;}
+.ref_info {background: #fffbca; padding:20px 30px 25px; margin-bottom: 30px; font-size: 16px;}
+.ref_info table {font-size: 14px; width: 100%; margin-top: 20px;}
+.ref_sub {padding-left: 30px; margin-bottom: 30px;}
+.ref_count {font-size: 24px; padding-left: 25px;}
 
 
 /* --- POPUP properties --- */
@@ -286,6 +299,7 @@ td.tar {padding-right: 50px;}
 .right {float: right;}
 .left {float: left;}
 .tar {text-align: right;}
+.bigger {font-size: 16px;}
 .ir {
     background-color: transparent;
     border: 0;
