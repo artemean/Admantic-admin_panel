@@ -70,122 +70,126 @@
 					</div>
 				</header>
 				<div class="main_content">
-					<div class="ttl">Общая информация</div>
-					<table class="form_table"><col class="first_col"><col>
-						<tr>
-							<td>Название кампании</td>
-							<td>
-								<select name="" class="custom_select">
-									<option disabled selected class="hidden-option">Название кампании</option>
-									<option value="">Кампания 1</option>
-									<option value="">Кампания 2</option>
-									<option value="">Кампания 3</option>
-								</select>
-							</td>
-						</tr>
-
-						<tr>
-							<td>Выберите категорию...</td>
-							<td>
-								<select name="" class="custom_select">
-									<option disabled selected class="hidden-option">Выберите категорию...</option>
-									<option value="">Категория 1</option>
-									<option value="">Категория 2</option>
-									<option value="">Категория 3</option>
-								</select>
-							</td>
-						</tr>
-
-						<tr>
-							<td>Цена клика, руб.</td>
-							<td><input type="text" class="inpt"></td>
-						</tr>
-					</table>
-
-					<div class="ttl">Таргетинг</div>
-					<table class="form_table"><col class="first_col"><col>
-						<tr>
-							<td>Категории</td>
-							<td>
-								<ul class="cat_list">
-									<li>Женщины</li>
-									<li>Дети</li>
-									<li>Кино</li>
-								</ul>
-								<span class="trigger" id="edit_cat">Настроить</span>
-							</td>
-						</tr>
-						<tr>
-							<td>География</td>
-							<td>
-								<ul class="cat_list">
-									<li>Россия</li>
-									<li>Украина</li>
-									<li>Беларусь</li>
-									<li>Казахстан</li>
-								</ul>
-								<span class="trigger" id="edit_geo">Настроить</span>
-							</td>
-						</tr>
-						<tr>
-							<td>Время показа рекламы</td>
-							<td>
-								<ul class="cat_list">
-									<li>Пн: <span class="show_time">9:00 — 20:00</span> </li>
-									<li>Вт: <span class="show_time">9:00 — 20:00</span> </li>
-									<li>Ср: <span class="show_time">9:00 — 20:00</span> </li>
-									<li>Чт: <span class="show_time">9:00 — 20:00</span></li>
-									<li>Пт: <span class="show_time">9:00 — 20:00</span> </li>
-									<li>Сб: <span class="show_time">9:00 — 20:00</span> </li>
-									<li>Вс: <span class="show_time">9:00 — 20:00</span> </li>
-								</ul>
-								<span class="trigger" id="edit_time">Настроить</span>
-							</td>
-						</tr>
-					</table>
-
-					<div class="ttl">Ограничения показа рекламы</div>
-					<table class="form_table"><col class="first_col"><col>
-						<tr>
-							<td>Общий бюджет кампании, руб.</td>
-							<td><input type="text" class="inpt"></td>
-						</tr>
-						<tr>
-							<td>Суточный бюджет кампании, руб.</td>
-							<td><input type="text" class="inpt"></td>
-						</tr>
-						<tr>
-							<td>Максимальное количество кликов в сутки</td>
-							<td><input type="text" class="inpt"></td>
-						</tr>
-					</table>
-
-					<div class="ttl">Ограничения показа рекламы</div>
-					<table class="form_table"><col class="first_col"><col>
-						<tr>
-							<td>Не показывать на сайтах</td>
-							<td>
-								<textarea cols="40" rows="5"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<td>Показывать только на сайтах</td>
-							<td>
-								<textarea cols="40" rows="5"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<td>Добавлять автоматически данные для аналитики при создании объйвления в кампании</td>
-							<td><input type="checkbox"></td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<div class="attention">Внимание! В этом случае к вашей ссылке будет добавляться параметр tid, идентифицирующий источник перехода. Не забудьте проверить корректность работы ссылки tid. Например, http://domen.com/?tid=999778898</div>
-							</td>
-						</tr>
-					</table>
-
-					<button type="submit" class="obutton">Добавить кампанию</button>
+					<form action="some.php">
+						<fieldset>
+							<div class="ttl">Общая информация</div>
+							<table class="form_table"><col class="first_col"><col>
+								<tr>
+									<td>Название кампании</td>
+									<td>
+										<select name="" class="custom_select">
+											<option disabled selected class="hidden-option">Название кампании</option>
+											<option value="">Кампания 1</option>
+											<option value="">Кампания 2</option>
+											<option value="">Кампания 3</option>
+										</select>
+									</td>
+								</tr>
+							
+								<tr>
+									<td>Выберите категорию...</td>
+									<td>
+										<select name="" class="custom_select">
+											<option disabled selected class="hidden-option">Выберите категорию...</option>
+											<option value="">Категория 1</option>
+											<option value="">Категория 2</option>
+											<option value="">Категория 3</option>
+										</select>
+									</td>
+								</tr>
+							
+								<tr>
+									<td>Цена клика, руб.</td>
+									<td><input type="text" class="inpt"></td>
+								</tr>
+							</table>
+							
+							<div class="ttl">Таргетинг</div>
+							<table class="form_table"><col class="first_col"><col>
+								<tr>
+									<td>Категории</td>
+									<td>
+										<ul class="cat_list">
+											<li>Женщины</li>
+											<li>Дети</li>
+											<li>Кино</li>
+										</ul>
+										<span class="trigger" id="edit_cat">Настроить</span>
+									</td>
+								</tr>
+								<tr>
+									<td>География</td>
+									<td>
+										<ul class="cat_list">
+											<li>Россия</li>
+											<li>Украина</li>
+											<li>Беларусь</li>
+											<li>Казахстан</li>
+										</ul>
+										<span class="trigger" id="edit_geo">Настроить</span>
+									</td>
+								</tr>
+								<tr>
+									<td>Время показа рекламы</td>
+									<td>
+										<ul class="cat_list">
+											<li>Пн: <span class="show_time">9:00 — 20:00</span> </li>
+											<li>Вт: <span class="show_time">9:00 — 20:00</span> </li>
+											<li>Ср: <span class="show_time">9:00 — 20:00</span> </li>
+											<li>Чт: <span class="show_time">9:00 — 20:00</span></li>
+											<li>Пт: <span class="show_time">9:00 — 20:00</span> </li>
+											<li>Сб: <span class="show_time">9:00 — 20:00</span> </li>
+											<li>Вс: <span class="show_time">9:00 — 20:00</span> </li>
+										</ul>
+										<span class="trigger" id="edit_time">Настроить</span>
+									</td>
+								</tr>
+							</table>
+							
+							<div class="ttl">Ограничения показа рекламы</div>
+							<table class="form_table"><col class="first_col"><col>
+								<tr>
+									<td>Общий бюджет кампании, руб.</td>
+									<td><input type="text" class="inpt"></td>
+								</tr>
+								<tr>
+									<td>Суточный бюджет кампании, руб.</td>
+									<td><input type="text" class="inpt"></td>
+								</tr>
+								<tr>
+									<td>Максимальное количество кликов в сутки</td>
+									<td><input type="text" class="inpt"></td>
+								</tr>
+							</table>
+							
+							<div class="ttl">Ограничения показа рекламы</div>
+							<table class="form_table"><col class="first_col"><col>
+								<tr>
+									<td>Не показывать на сайтах</td>
+									<td>
+										<textarea cols="40" rows="5"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>Показывать только на сайтах</td>
+									<td>
+										<textarea cols="40" rows="5"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>Добавлять автоматически данные для аналитики при создании объйвления в кампании</td>
+									<td><input type="checkbox"></td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<div class="attention">Внимание! В этом случае к вашей ссылке будет добавляться параметр tid, идентифицирующий источник перехода. Не забудьте проверить корректность работы ссылки tid. Например, http://domen.com/?tid=999778898</div>
+									</td>
+								</tr>
+							</table>
+							
+							<button type="submit" class="obutton">Добавить кампанию</button>
+						</fieldset>
+					</form>
 				</div>
 			</main>
 			<!-- Content end -->

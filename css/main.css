@@ -83,6 +83,7 @@ a, .opened {color: #34abe3; text-decoration: none; outline: 0;}
 a:hover {text-decoration: underline;}
 ul {margin: 15px 0 22px;}
 ul li {margin: 0 0 10px;}
+input[type="checkbox"], .lb  {vertical-align: middle;}
 
 .container, .main_content {width: 1201px; margin: 0 auto;}
 .wrapper {padding: 90px 0 0;}
@@ -129,6 +130,8 @@ ul li {margin: 0 0 10px;}
 .user_nav {margin: 0 0 20px;}
 .user_nav ul {border-bottom: 1px solid #d4d8da;}
 .user_nav ul li {display: inline-block; margin: 0 24px 0 0; padding: 26px 0 16px 0;}
+h2 + .user_nav ul li {padding: 0 0 16px 0;}
+h2 + .user_nav {margin-top: -14px;}
 .user_nav .active {border-bottom: 2px solid #34abe3;}
 .user_nav .active a {color: #000; text-decoration: none;}
 .page_navigation {padding: 10px 0 0;}
@@ -190,6 +193,7 @@ h2 + .st {margin-top: -20px;}
 .c1 {width: 30px;}
 .c2 {width: 194px;}
 .c3, .c4, .c5 {width: 130px;}
+.lb {margin-right: 15px;}
 
 
 .ttl {font-size: 16px; color: #838383; margin: 0 0 30px;}
@@ -238,10 +242,10 @@ h2 + .st {margin-top: -20px;}
 .phone {padding: 0 0 17px;}
 
 .columned {width: 1201px; margin: -24px auto -35px;}
-.main_sidebar {width: 180px; float: left; padding: 40px 0 0;}
+.main_sidebar {width: 180px; float: left; padding: 33px 0 0;}
 .admin_section {width: 980px; float: left; padding: 26px 20px; min-height: 620px;}
 .main_sidebar + .admin_section {border-left: 1px solid #e9ebec;}
-.side_menu li {margin: 0 0 20px; padding: 8px 15px;}
+.side_menu li {margin: 0 0 5px; padding: 8px 15px;}
 .side_menu .active, .side_menu .active a {background: #34abe3; color: #fff;}
 .preview {width: 412px; float: right;}
 .ad_preview {border: 1px solid #d4d8da; padding: 20px 50px 20px 20px; font-size: 13px;}
