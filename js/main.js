@@ -61,3 +61,9 @@ $(".check_all").click(function(){//Check all checkboxes in filter form
 $(".uncheck_all").click(function(){//Uncheck all checkboxes in filter form 
 	$('.bordered_form input[type="checkbox"]').prop( "checked", false );
 });
+
+$('.payment_method input[type="radio"]').each(function(){
+	if ($(this).is(":checked")) {
+		$(this).parents(".pm_head").addClass("hilight");
+	};
+});

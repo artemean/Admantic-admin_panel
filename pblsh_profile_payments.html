@@ -10,7 +10,8 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/dropkick.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -62,57 +63,73 @@
 					<div class="container">
 						<nav class="user_nav">
 							<ul>
-								<li class="active"><a href="#">Кампании</a></li>
-								<li><a href="#">Статистика</a></li>
+								<li><a href="#">Настройки профиля</a></li>
+								<li><a href="#">Уведомления</a></li>
+								<li><a href="#">Реферальная программа</a></li>
+								<li class="active"><a href="#">Выплаты</a></li>
+								<li><a href="#">Пополненине баланса</a></li>
 							</ul>
 						</nav>
-						<h1>«Часы Casio G-Shock»</h1>
+						<h1>Выплаты</h1>
 					</div>
 				</header>
 				<div class="columned clearfix">
 					<aside class="main_sidebar">
 						<ul class="side_menu">
-							<li><a href="#">Объявления</a></li>
+							<li class="active"><a href="#">История выплат</a></li>
 							<li><a href="#">Настройки</a></li>
 						</ul>
 					</aside>
 					<section class="admin_section">
-						<h2>Добавить объявление</h2>
-						<form action="some.php">
-							<fieldset>
-								<div class="add_ad clearfix">
-									<div class="preview">
-										<div class="ttl">Предварительный просмотр:</div>
-										<div class="aad_preview">
-											<img src="img/watch.jpg" alt="">
-											<a href="#">Точечное воздействие редко соответствует рыночным</a>
-											<p>Дело в том, что креативная концепция регулярно экономит нишевый проект.</p>
-										</div>
-									</div>
-									<div class="aad_fields">
-										<table class="aad_table">
-											<tr>
-												<td><label for="">Картинка</label></td>
-												<td><input type="file"></td>
-											</tr>
-											<tr>
-												<td><label for="">Заголовок</label><span class="qm"></span></td>
-												<td><input type="text" class="inpt"><span class="char_count">50</span></td>
-											</tr>
-											<tr>
-												<td><label for="">Описание</label><span class="qm"></span></td>
-												<td><textarea cols="40" rows="5"></textarea><span class="char_count">150</span></td>
-											</tr>
-											<tr>
-												<td><label for="">Ссылка перехода</label><span class="qm"></span></td>
-												<td><input type="text" class="inpt"></td>
-											</tr>
-										</table>
-									</div>
+						<h2>История выплат</h2>
+						<div class="payment_info clearfix">
+							<div class="w33">
+								Текущий баланс:
+								<div class="bal">
+									150 <span>руб.</span>
 								</div>
-								<button class="obutton" type="submit">Добавить</button>
-							</fieldset>
-						</form>
+							</div>
+							<div class="w33">
+								Выплачено:
+								<div class="bal">
+									17 850 <span>руб.</span>
+								</div>
+							</div>
+							<div class="w33">
+								Способ выплат:
+								<div class="payment">WebMoney.WMZ</div>
+							</div>
+						</div>
+						<table class="atable">
+							<tr>
+								<th>№</th>
+								<th>Дата</th>
+								<th>Сумма</th>
+								<th>Способ платежа</th>
+								<th>Комиссия</th>
+							</tr>
+							<tr class="selected_tr">
+								<td>1</td>
+								<td>23.10.2014</td>
+								<td>3 456</td>
+								<td>WebMoney</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>23.10.2014</td>
+								<td>1 200</td>
+								<td>WebMoney</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>23.10.2014</td>
+								<td>1 200</td>
+								<td>WebMoney</td>
+								<td>2</td>
+							</tr>
+						</table>
 					</section>
 				</div>
 				

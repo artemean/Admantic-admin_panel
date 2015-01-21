@@ -83,7 +83,7 @@ a, .opened {color: #34abe3; text-decoration: none; outline: 0;}
 a:hover {text-decoration: underline;}
 ul {margin: 15px 0 22px;}
 ul li {margin: 0 0 10px;}
-input[type="checkbox"], input[type="checkbox"] + label, .lb {vertical-align: middle;}
+input[type="checkbox"], input[type="checkbox"] + label, input[type="radio"], input[type="radio"] + label, .lb {vertical-align: middle;}
 input[type="checkbox"] + label {margin-left: 5px;}
 
 .container, .main_content {width: 1201px; margin: 0 auto;}
@@ -266,8 +266,16 @@ h2 + .st {margin-top: -20px;}
 .qm {display: inline-block; width: 21px; height: 21px; background: url(../img/icons/q1.png) 0 0 no-repeat; margin: 0 8px;}
 .qm:hover {background: url(../img/icons/q2.png) 0 0 no-repeat;}
 .char_count {margin: 0 8px; color: #838383;}
-.w50 {float: left; width: 314px;}
+.w50, .w33 {float: left; width: 314px;}
+.w33 {width: 33%;}
+.payment_info {margin-bottom: 35px;}
+.payment_info .w33 {text-align: center; padding: 35px 0 55px;}
+.payment_info .w33 + .w33 {border-left: 1px solid #e9ebec;}
 .check_all, .uncheck_all {color: #34abe3; margin-right: 16px; cursor: pointer;}
+
+.bal, .payment {font-size: 36px; font-weight: 300; padding-top: 25px;}
+.bal span {font-size: 24px; color: #838383;}
+.payment {color: #34abe3;}
 
 .sep {padding: 10px 0;}
 .ref_link {font-size: 16px; border: 2px dashed #7ec127; padding: 10px 14px; display: inline-block; margin-right: 5px;}
@@ -281,6 +289,19 @@ h2 + .st {margin-top: -20px;}
 .ref_info table {font-size: 14px; width: 100%; margin-top: 20px;}
 .ref_sub {padding-left: 30px; margin-bottom: 30px;}
 .ref_count {font-size: 24px; padding-left: 25px;}
+
+.payment_method {border: 1px solid #dfe2e4; margin-bottom: 30px; padding: 1px; border-radius: 2px;}
+.payment_method .obutton {padding:10px 12px;}
+.payment_method .inpt {margin: 0 8px;}
+.pm_head {padding: 24px 20px 27px;}
+.pm_head * {vertical-align: middle;}
+.pm_head label, .pm_head .bold500 {font-size: 16px;}
+.pm_head label {width: 300px;}
+.pm_body {padding: 20px 20px 30px; display: none;}
+.min, .com, .pm_head label {display: inline-block;}
+.com {float: right;}
+.hilight {background: #f2f5f7;}
+.hilight + .pm_body {display: block;}
 
 
 /* --- POPUP properties --- */
@@ -339,6 +360,7 @@ h2 + .st {margin-top: -20px;}
 .left {float: left;}
 .tar {text-align: right;}
 .bigger {font-size: 16px;}
+.bold500 {font-weight: 500;}
 .ir {
 	background-color: transparent;
 	border: 0;
