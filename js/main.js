@@ -21,9 +21,13 @@ $(".close").click(function () {
 });
 
 /*-- Popup --*/
-$('#edit_geo').click(function () {
+$('.trigger').click(function () {
+	event.preventDefault();
+	$('div#' + $(this).data('divId')).fadeIn(200)
+	// $(this).attr("href").fadeIn(200);
+	// console.log($(this).attr("href"))
 	$('.overlay').fadeIn(300);
-	$('#pop2').fadeIn(300);
+	// $('.geo_popup').fadeIn(300);
 });
 
 $('.overlay').click(function(){
@@ -67,3 +71,29 @@ $('.payment_method input[type="radio"]').each(function(){
 		$(this).parents(".pm_head").addClass("hilight");
 	};
 });
+
+$(".fixed_alert").delay(5000).slideUp();//Grenn alert bar will disappear after 5s from page load
+
+/* Timetable actions */
+$(".hour").click(function(){
+	$(this).toggleClass("busy");
+});
+$("#check_workingdays").click(function(){
+	$(".workingdays .hour").toggleClass("busy");
+});
+$("#check_weekend").click(function(){
+	$(".weekend .hour").toggleClass("busy");
+});
+$("#check_all").click(function(){
+	$(".week .hour").toggleClass("busy");
+});
+$("#check_workhours").click(function(){
+	$(".day_hours .hour, .evening_hours .hour").toggleClass("busy");
+});
+$("#check_afterwork").click(function(){
+	$(".morning_hours .hour, .night_hours .hour").toggleClass("busy");
+});
+$("#check_allhours").click(function(){
+	$(".week .hour").toggleClass("busy");
+});
+/* Timetable actions end */

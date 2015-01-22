@@ -45,7 +45,7 @@
 							<li><a href="#">Выход</a></li>
 						</ul>
 					</div>
-					<div class="messages">
+					<div class="notification">
 						<a href="#" class="bubble"></a>
 						<div class="msg_count">5</div>
 					</div>
@@ -92,20 +92,50 @@
 									<div class="aad_fields">
 										<table class="aad_table">
 											<tr>
-												<td><label for="">Картинка</label></td>
-												<td><input type="file"></td>
+												<td><label for="in20">Картинка</label></td>
+												<td><input type="file" id="in20"></td>
 											</tr>
 											<tr>
-												<td><label for="">Заголовок</label><span class="qm"></span></td>
-												<td><input type="text" class="inpt"><span class="char_count">50</span></td>
+												<td>
+													<label for="in21">Заголовок</label>
+													<div class="qm">
+														<div class="hoverup">
+															Введите заголовок
+														</div>
+													</div>
+												</td>
+												<td><input type="text" class="inpt" id="in21"><span class="char_count">50</span></td>
 											</tr>
 											<tr>
-												<td><label for="">Описание</label><span class="qm"></span></td>
-												<td><textarea cols="40" rows="5"></textarea><span class="char_count">150</span></td>
+												<td>
+													<label for="in22">Описание</label>
+													<div class="qm">
+														<div class="hoverup">
+															<h6>Графический баннер</h6>
+															<p>Графический баннеро может быть в формате jpg, png, gif либо flash. Максимаотный размер баннера — 75 кб.</p>
+
+															<h6>Особенности flash-баннера</h6>
+															<p>Чтобы система могла правильно учитывать клики по flash-баннерам, сделайте следующее: создайте в баннере элемент типа button, для которого пропишите такой скрипт:</p>
+															<code>
+																<span class="blue">on</span> (<span class="blue">release</span>) {<br>
+																<span class="blue">getURL</span> (url, “<span class="green">_blank</span>”);<br>
+																}
+															</code>
+														</div>
+													</div>
+												</td>
+												<td><textarea cols="40" rows="5" id="in22"></textarea><span class="char_count">150</span></td>
 											</tr>
 											<tr>
-												<td><label for="">Ссылка перехода</label><span class="qm"></span></td>
-												<td><input type="text" class="inpt"></td>
+												<td>
+													<label for="in23">Ссылка перехода</label>
+													<div class="qm">
+														<div class="hoverup">
+															Введите ссылку, по которой будет осуществляться переход
+														</div>
+													</div>
+												</td>
+												<td><input type="text" class="inpt" id="in23"></td>
 											</tr>
 										</table>
 									</div>

@@ -46,12 +46,8 @@
 							<li><a href="#">Выход</a></li>
 						</ul>
 					</div>
-					<div class="messages">
-						<a href="#" class="bubble"></a>
-						<div class="msg_count">5</div>
-					</div>
 					<div class="balance">Баланс: <span>150 руб.</span></div>
-					<div class="support"><a href="#">Поддержка</a><div class="sup_count">5</div></div>
+					<div class="support"><a href="#">Поддержка</a></div>
 				</div>
 			</header>
 			<!-- Header end -->
@@ -115,7 +111,7 @@
 											<li>Дети</li>
 											<li>Кино</li>
 										</ul>
-										<span class="trigger" id="edit_cat">Настроить</span>
+										<a class="trigger" href="#pop1" data-div-id="pop1">Настроить</a>
 									</td>
 								</tr>
 								<tr>
@@ -127,7 +123,7 @@
 											<li>Беларусь</li>
 											<li>Казахстан</li>
 										</ul>
-										<span class="trigger" id="edit_geo">Настроить</span>
+										<a class="trigger" href="#pop2" data-div-id="pop2">Настроить</a>
 									</td>
 								</tr>
 								<tr>
@@ -142,7 +138,7 @@
 											<li>Сб: <span class="show_time">9:00 — 20:00</span> </li>
 											<li>Вс: <span class="show_time">9:00 — 20:00</span> </li>
 										</ul>
-										<span class="trigger" id="edit_time">Настроить</span>
+										<a class="trigger" href="#pop3" data-div-id="pop3">Настроить</a>
 									</td>
 								</tr>
 							</table>
@@ -218,8 +214,9 @@
 		</footer>
 		<!-- Footer end -->
 
+		<!-- Geo Popup begin -->
 		<div class="popup geo_popup" id="pop2">
-			<span class="trigger right clear_form">Очистить</span>
+			<span class="lnk right clear_form">Очистить</span>
 			<div class="pop_ttl">Географический таргетинг</div>
 			<div class="scroll_holder">
 				<form action="some.php" class="request">
@@ -259,6 +256,283 @@
 			<button type="reset" class="clear_button">Отмена</button>
 			<div class="close"></div>
 		</div>
+		<!-- Geo Popup end -->
+
+		<!-- Time Popup begin -->
+		<div class="popup time_popup" id="pop3">
+			<div class="pop_head">
+				<div class="legend">
+					<span class="le1"><i></i>Не показывать рекламу</span>
+					<span class="le2"><i></i>Показывать рекламу</span>
+				</div>
+				<div class="pop_ttl">Время показа рекламы</div>
+			</div>
+			<div class="time_table">
+				<div class="nt">
+					По дням недели:   <span class="lnk" id="check_workingdays">будни</span>   |   <span class="lnk" id="check_weekend">выходные</span>   |   <span class="lnk" id="check_all">все</span>
+				</div>
+				<div class="nt">
+					По часам:   <span class="lnk" id="check_workhours">рабочие</span>   |   <span class="lnk" id="check_afterwork">нерабочие</span>   |   <span class="lnk" id="check_allhours">все</span>
+				</div>
+				<table class="week">
+					<col class="d1">
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col class="d2">
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col class="d2">
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col class="d2">
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<tr>
+						<td></td>
+						<td colspan="6" class="it">ночь</td>
+						<td colspan="6" class="it">утро</td>
+						<td colspan="6" class="it">день</td>
+						<td colspan="6" class="it">вечер</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+					</tr>
+					<tr class="workingdays">
+						<td>пн</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+					<tr class="workingdays">
+						<td>вт</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+					<tr class="workingdays">
+						<td>ср</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+					<tr class="workingdays">
+						<td>чт</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+					<tr class="workingdays">
+						<td>пт</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+					<tr class="weekend">
+						<td>сб</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+					<tr class="weekend">
+						<td>вс</td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="morning_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="day_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="evening_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+						<td class="night_hours"><div class="hour"></div></td>
+					</tr>
+				</table>
+				<div class="tac">
+					<button type="submit" class="obutton">Сохранить</button>
+					<button type="reset" class="clear_button">Отмена</button>
+				</div>
+			</div>
+			<div class="close"></div>
+		</div>
+		<!-- Time Popup end -->
+
 		<div class="overlay"></div>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

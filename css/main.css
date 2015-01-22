@@ -95,6 +95,7 @@ input[type="checkbox"] + label {margin-left: 5px;}
 
 .main_head { transition:height 0.2s; background: #fff; position: fixed; z-index: 999; top: 0; left: 0; width: 100%; height: 80px; }
 .main_head.fixed { border-bottom: 0; box-shadow: 0 2px 2px #ddd; transition:height 0.2s;}
+.fixed_alert {width: 100%; position: fixed; color: #fff; font-size: 14px; text-align: center; background: #7fbd58; background: rgba(127,189,88,0.9); z-index: 9999; padding: 13px 0 15px;}
 
 .logo {width: 70px;height: 40px;position: absolute;top: 20px;left: 0;}
 .home_body .main_head {border-bottom: 0;}
@@ -111,7 +112,7 @@ input[type="checkbox"] + label {margin-left: 5px;}
 .sup_count {display: inline-block; width: 21px; height: 21px; background: #34ABE3; border-radius: 20px; text-align: center; font-size: 12px; color: #fff; top: -15px; position: relative; padding: 3px 0 0;}
 .balance {position: relative; top: 10px; color: #838383; float: right; margin-left: 39px;}
 .balance span {color: #000;}
-.messages {position: relative; float: right; top: 10px; margin-left: 39px;}
+.notification {position: relative; float: right; top: 10px; margin-left: 39px;}
 .bubble {display: inline-block; width: 25px; height: 20px; background: url(../img/icons/bubble.png) 0 0 no-repeat;}
 .msg_count {position: relative; top: -20px; display: inline-block; font-size: 12px; left: -4px;}
 .profile { position: relative; float: right; top: 10px; margin-left: 24px;}
@@ -156,7 +157,7 @@ h2 + .user_nav {margin-top: -14px;}
 .obutton {border-radius: 3px; background: #f17817; color: #fff;}
 .st {padding: 4px 0 0; margin: 0 0 20px;}
 h2 + .st {margin-top: -20px;}
-.btn, .obutton, .geo_list * {
+.btn, .obutton, .geo_list *, .lnk {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -204,7 +205,7 @@ h2 + .st {margin-top: -20px;}
 .form_table tr:last-child td {padding-bottom: 40px;}
 .form_table td {padding: 0 50px 35px 0; vertical-align: top;}
 .form_table .first_col {width: 290px;}
-.trigger {color: #34abe3; cursor: pointer;}
+.trigger, .lnk {color: #34abe3; cursor: pointer;}
 .form_table .inpt {width: 219px;}
 .inpt, .datepicker {border: 1px solid #d4d8da; border-radius: 3px; padding:9px 5px; outline: 0;}
 
@@ -224,8 +225,8 @@ h2 + .st {margin-top: -20px;}
 .ui-datepicker-calendar {margin: 0!important;}
 .ui-datepicker-calendar th {border-bottom: 1px solid  #dfe2e4; font-weight: normal; text-transform: lowercase; font-size: 14px;}
 .ui-datepicker td span, .ui-datepicker td a {padding: 3px; text-align: center; font-size: 13px;}
-.ui-datepicker-current-day {}
-.ui-datepicker-current-day .ui-state-default {border: 0; background: #34abe3; border-radius: 2px; color: #fff;}
+.ui-datepicker-current-hour {}
+.ui-datepicker-current-hour .ui-state-default {border: 0; background: #34abe3; border-radius: 2px; color: #fff;}
 .ui-datepicker-week-end {color: #f6373e;}
 .ui-datepicker-next-hover, .ui-datepicker-prev-hover {border: 0!important; background: none!important; cursor: pointer;}
 .ui-datepicker-next .ui-icon {background: url(../img/icons/rar.png) 0 0 no-repeat; border: 0;}
@@ -263,9 +264,30 @@ h2 + .st {margin-top: -20px;}
 .aad_table {width: 100%;}
 .aad_table td {padding: 0 10px 20px 0; vertical-align: top;}
 .aad_table label, .qm {vertical-align: middle;}
-.qm {display: inline-block; width: 21px; height: 21px; background: url(../img/icons/q1.png) 0 0 no-repeat; margin: 0 8px;}
+.qm {display: inline-block; width: 21px; height: 21px; background: url(../img/icons/q1.png) 0 0 no-repeat; margin: 0 8px; position: relative;}
 .qm:hover {background: url(../img/icons/q2.png) 0 0 no-repeat;}
-.char_count {margin: 0 8px; color: #838383;}
+.hoverup h6, .hoverup p {font-size: 14px; margin: 0 0 10px;}
+.hoverup  {
+  box-shadow: 0 0 15px #ccc;
+  min-width: 360px;
+  top:-10px;
+  left: 30px;
+  background:#fffbca;
+  color:#000;
+  opacity:0;
+  visibility: hidden;
+  position:absolute;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:  opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition:  opacity 0.5s;
+  transition:  opacity 0.5s;
+  z-index: 100;
+  padding: 20px;
+}
+.qm:hover .hoverup {opacity:1; visibility: visible; }
+
+ .char_count {margin: 0 8px; color: #838383;}
 .w50, .w33 {float: left; width: 314px;}
 .w33 {width: 33%;}
 .payment_info {margin-bottom: 35px;}
@@ -311,7 +333,7 @@ h2 + .st {margin-top: -20px;}
 .popup .close {top: 10px; right: 10px;}
 .overlay {display:none; background:#6c6d70; bottom:0; left:0; opacity:0.23; position:fixed; right:0; top:0; z-index:1000;}
 .sinp {display:block; margin:0 0 15px; height:31px; padding:0 10px; width:183px; border:0; background:none; color:#8f8f8f; font-style:italic; text-align:center;}
-.pop_ttl {font-size: 17px; font-weight: 700;}
+.pop_ttl {font-size: 17px; font-weight: 500;}
 .scroll_holder {border-top: 1px solid #d3d3d4; border-bottom: 1px solid #d3d3d4; margin: 24px -30px 30px; padding: 16px 30px 0; height: 483px; overflow-y: auto;}
 .geo_list ul {padding: 10px 0 0px 25px; display: none;}
 .geo_list input, .geo_list label {vertical-align: middle; outline:0; margin: 0 9px 0 0;}
@@ -319,6 +341,25 @@ h2 + .st {margin-top: -20px;}
 .opened {position: relative;}
 .opened:after {position: absolute; content: ''; display: block; border: solid transparent; border-width: 0.25em 0.25em 0; border-top-color: #34abe3; right: -12px; top: 10px;}
 .geo_list ul ul .opened:after {border-width: 0;}
+.time_popup {width: 784px; margin-left: -392px; padding: 0;}
+.pop_head {border-bottom: 1px solid #dfe2e4; margin: 0 0 20px; padding: 22px 30px 23px;}
+.legend {font-size: 13px; padding:5px 35px 0 0; float: right;}
+.le1, .le2 {float: right;}
+.le1 i, .le2 i {width: 12px; height: 12px; display: inline-block; border-radius: 2px; position: relative; top: 1px; margin:0 8px 0 29px;}
+.le1 i {background: #e7e9eb;}
+.le2 i {background: #34abe3;}
+.nt {padding: 0 0 12px;}
+.nt .lnk {margin: 0 8px;}
+.time_table {padding: 5px 30px 30px;}
+.hour {width: 24px; height: 24px; background: #f2f5f7; border-radius: 2px; cursor: pointer;}
+.week {width: 100%; margin-bottom: 20px;}
+.week td {padding: 2px; font-size: 13px; text-align: center;}
+.week .it {color: #838383;}
+.marg {margin-right: 10px;}
+.d1 {width: 32px;}
+.d2 {width: 38px;}
+.busy {background: #34abe3;}
+
 
 
 /* jQuery UI tooltip begin */
@@ -359,8 +400,12 @@ h2 + .st {margin-top: -20px;}
 .right {float: right;}
 .left {float: left;}
 .tar {text-align: right;}
+.tac {text-align: center;}
 .bigger {font-size: 16px;}
 .bold500 {font-weight: 500;}
+.it {font-style: italic;}
+.blue {color: #068df6;}
+.green {color: #46ac0f;}
 .ir {
 	background-color: transparent;
 	border: 0;
